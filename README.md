@@ -5,8 +5,8 @@ Standalone-version of the
 Experiment to see if I can make it work with
 [ngrx](https://github.com/ngrx/store) too.
 
-Credit to Evan Schultz, Cosmin Ronnin, Michael Bennett for the original
-decorator implementation.
+Credit to Evan Schultz and Cosmin Ronnin for the original decorator 
+implementation.
 
 # Setup
 
