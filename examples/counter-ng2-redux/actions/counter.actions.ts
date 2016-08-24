@@ -1,7 +1,6 @@
 import { Injectable } from '@angular/core';
 import { NgRedux } from 'ng2-redux';
 import { IAppState } from '../store';
-import { RandomNumberService } from '../services/random-number.service';
 
 /**
  * Action creators in Angular 2. We may as well adopt a more
@@ -11,13 +10,10 @@ import { RandomNumberService } from '../services/random-number.service';
  */
 @Injectable()
 export class CounterActions {
-  constructor (
-    private ngRedux: NgRedux<IAppState>,
-    private randomNumberService: RandomNumberService) {}
+  constructor (private ngRedux: NgRedux<IAppState>) {}
 
   static INCREMENT_COUNTER: string = 'INCREMENT_COUNTER';
   static DECREMENT_COUNTER: string = 'DECREMENT_COUNTER';
-  static RANDOMIZE_COUNTER: string = 'RANDOMIZE_COUNTER';
 
   increment(): void {
     this.ngRedux.dispatch({ type: CounterActions.INCREMENT_COUNTER });
@@ -25,23 +21,5 @@ export class CounterActions {
 
   decrement(): void {
     this.ngRedux.dispatch({ type: CounterActions.DECREMENT_COUNTER });
-  }
-
-  incrementIfOdd(): void {
-    const { counter } = this.ngRedux.getState();
-    if (counter % 2 !== 0) {
-      this.increment();
-    }
-  }
-
-  incrementAsync(delay: number = 1000): void {
-    setTimeout(this.increment.bind(this), delay);
-  }
-  
-  randomize(): void {
-    this.ngRedux.dispatch({
-      type: CounterActions.RANDOMIZE_COUNTER,
-      payload: this.randomNumberService.pick()
-    });
   }
 }

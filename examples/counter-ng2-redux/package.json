@@ -4,8 +4,7 @@
   "description": "Counter example for ng2-redux",
   "main": "server.js",
   "scripts": {
-    "start": "webpack-dev-server -d --inline --progress --no-info --config webpack.config.js",
-    "dev": "webpack-dev-server -d --inline --progress --no-info --config webpack.dev.config.js --host 127.0.0.1"
+    "start": "webpack-dev-server -d --inline --progress --no-info --config webpack.config.js"
   },
   "repository": {
     "type": "git",
