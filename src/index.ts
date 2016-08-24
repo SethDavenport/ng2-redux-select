@@ -1,3 +1,2 @@
-export { NgRedux } from './components/ng-redux';
-export { DevToolsExtension } from './components/dev-tools';
-export { select } from './decorators/select';
+export { NgSelect } from './ng-select';
+export { select } from './select';

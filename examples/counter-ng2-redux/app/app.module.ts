@@ -6,6 +6,7 @@ import { CounterActions } from '../actions/counter.actions';
 import { App } from './app.component.ts';
 import { Counter } from '../components/counter.component';
 import { IAppState, rootReducer, INITIAL_STATE } from '../store/index';
+import { NgSelect } from '../../../src';
 
 @NgModule({
   imports: [ BrowserModule, CommonModule, ],
@@ -15,17 +16,20 @@ import { IAppState, rootReducer, INITIAL_STATE } from '../store/index';
     DevToolsExtension,
     NgRedux,
     CounterActions,
+    NgSelect,
   ]
 })
 export class AppModule {
   constructor(
-    private ngRedux: NgRedux<IAppState>,
-    private devTool: DevToolsExtension) {
+    ngRedux: NgRedux<IAppState>,
+    devTool: DevToolsExtension,
+    ngSelect: NgSelect) {
 
-    this.ngRedux.configureStore(
+    ngRedux.configureStore(
       rootReducer,
       INITIAL_STATE,
       [],
       [ devTool.isEnabled() ? devTool.enhancer() : f => f ]);
+    ngSelect.initialize(ngRedux);
   }
 }

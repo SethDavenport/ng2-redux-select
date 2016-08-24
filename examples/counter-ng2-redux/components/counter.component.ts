@@ -1,7 +1,8 @@
 import { Component } from '@angular/core';
-import { NgRedux, select } from 'ng2-redux';
+import { NgRedux } from 'ng2-redux';
 import { Observable } from 'rxjs/Observable';
 import { CounterActions } from '../actions/counter.actions';
+import { select } from '../../../src';
 
 @Component({
   selector: 'counter',
