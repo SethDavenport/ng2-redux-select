@@ -1,4 +1,4 @@
-import { Action } from 'redux';
+import { ActionReducer, Action } from '@ngrx/store';
 import { CounterActions } from '../actions/counter.actions';
 
 export interface IAppState {

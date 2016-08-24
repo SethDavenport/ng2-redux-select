@@ -15,5 +15,6 @@ export class NgSelect {
   initialize(store: ISelectable) {
     // TODO: error check for double init.
     NgSelect.state$ = store.select(s => s);
+    console.log(NgSelect.state$)
   }
 }
