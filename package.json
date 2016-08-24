@@ -1,0 +1,67 @@
+{
+  "name": "ng2-redux",
+  "version": "0.0.1",
+  "description": "Angular 2 bindings for Redux",
+  "main": "./lib/index.js",
+  "scripts": {
+    "build": "rimraf ./lib; tsc",
+    "test": "npm run lint && npm run mocha",
+    "mocha": "mocha --opts ./mocha.opts",
+    "lint": "tslint 'src/**/*.ts' 'examples/counter/**.ts --exclude 'examples/counter/node_modules"
+  },
+  "typings": "./lib/index.d.ts",
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/SethDavenport/select.git"
+  },
+  "keywords": [
+    "redux",
+    "ng2",
+    "reselect",
+    "angular2",
+    "rxjs"
+  ],
+  "author": "Seth Davenport <seth.e.davenport@gmail.com> (http://github.com/SethDavenport)",
+  "contributors": [
+    {
+      "name": "Evan Schultz",
+      "email": "evan@rangle.io",
+      "url": "https://github.com/e-schultz"
+    },
+    {
+      "name": "Cosmin Ronnin",
+      "url": "https://github.com/kosz"
+    }
+  ],
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/SethDavenport/select/issues"
+  },
+  "homepage": "https://github.com/SethDavenport/select#readme",
+  "devDependencies": {
+    "@angular/core": "2.0.0-rc.5",
+    "@types/chai": "^3.4.31",
+    "@types/es6-shim": "0.0.30",
+    "@types/mocha": "^2.2.30",
+    "@types/node": "^6.0.36",
+    "@types/sinon": "^1.16.28",
+    "awesome-typescript-loader": "^2.2.1",
+    "chai": "^3.5.0",
+    "es6-shim": "^0.35.0",
+    "mocha": "^2.4.5",
+    "redux": "^3.4.0",
+    "reflect-metadata": "0.1.3",
+    "rimraf": "^2.5.2",
+    "rxjs": "5.0.0-beta.6",
+    "sinon": "^1.16.1",
+    "sinon-chai": "^2.8.0",
+    "symbol-observable": "^1.0.1",
+    "ts-node": "^1.2.3",
+    "tslint": "^3.11.0",
+    "typescript": "^2.0.0",
+    "zone.js": "^0.6.15"
+  },
+  "peerDependencies": {
+    "@angular/core": "2.0.0-rc.3 || ^2.0.0-rc.4 || ^2.0.0-rc.5"
+  }
+}
