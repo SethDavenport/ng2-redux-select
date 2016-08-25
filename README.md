@@ -43,7 +43,7 @@ import { NgSelect } from '../../../src';
 import { IAppState, rootReducer, INITIAL_STATE } from '../store/index';
 
 // TODO: not sure why this is needed here - it's done inside NgSelect as well.
-// Ngrx blows up without it - need to research why.
+// The ngrx example has issues without it - need to research why.
 import 'rxjs/add/operator/distinctUntilChanged';
 import 'rxjs/add/operator/map';
 // END TODO.
