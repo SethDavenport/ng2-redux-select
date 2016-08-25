@@ -4,7 +4,12 @@ import 'rxjs/add/operator/map';
 
 import { getIn } from './get-in';
 import { NgSelect } from './ng-select';
-import { PropertySelector, PathSelector, FunctionSelector, Comparator} from './types'
+import {
+  PropertySelector,
+  PathSelector,
+  FunctionSelector,
+  Comparator
+} from './types';
 
 export function select<T>(
   selector?: PropertySelector | PathSelector | FunctionSelector<any, T>,
