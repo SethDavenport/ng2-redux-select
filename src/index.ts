@@ -1,2 +1,3 @@
-export { NgSelect } from './ng-select';
-export { select } from './select';
+export * from './ng-select';
+export * from './select';
+export * from './types';
