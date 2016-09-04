@@ -2,11 +2,11 @@ import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { BrowserModule } from '@angular/platform-browser';
 import { NgRedux, DevToolsExtension} from 'ng2-redux';
+import { NgSelect } from 'ng2-redux-select';
 import { CounterActions } from '../actions/counter.actions';
 import { App } from './app.component';
 import { Counter } from '../components/counter.component';
 import { IAppState, rootReducer, INITIAL_STATE } from '../store/index';
-import { NgSelect } from '../../../src';
 
 @NgModule({
   imports: [ BrowserModule, CommonModule, ],
