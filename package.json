@@ -1,6 +1,6 @@
 {
   "name": "ng2-redux-select",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "description": "Typescript Select Decorator for RxJS-based State Containers",
   "main": "./lib/index.js",
   "scripts": {
@@ -13,7 +13,7 @@
   "typings": "./lib/index.d.ts",
   "repository": {
     "type": "git",
-    "url": "git+ssh://git@github.com/SethDavenport/select.git"
+    "url": "https://github.com/SethDavenport/ng2-redux-select.git"
   },
   "keywords": [
     "redux",
@@ -38,7 +38,7 @@
   "bugs": {
     "url": "https://github.com/SethDavenport/select/issues"
   },
-  "homepage": "https://github.com/SethDavenport/select#readme",
+  "homepage": "https://github.com/SethDavenport/ng2-redux-select#readme",
   "devDependencies": {
     "@angular/core": "2.0.0-rc.6",
     "@types/chai": "^3.4.32",

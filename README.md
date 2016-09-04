@@ -1,3 +1,4 @@
+[![CircleCI](https://img.shields.io/circleci/project/SethDavenport/ng2-redux-select/master.svg?maxAge=2592000)](https://circleci.com/gh/SethDavenport/ng2-redux-select/tree/master)
 [![npm version](https://img.shields.io/npm/v/ng2-redux-select.svg)](https://www.npmjs.com/package/ng2-redux-select)
 [![npm downloads](https://img.shields.io/npm/dt/ng2-redux-select.svg)](https://www.npmjs.com/package/ng2-redux-select)
 
