@@ -6,7 +6,7 @@
   "scripts": {
     "build": "rimraf ./lib; tsc",
     "test": "rimraf coverage && npm run lint && npm run cover",
-    "mocha": "mocha --opts ./mocha.opts",
+    "mocha": "mocha --compilers ts:ts-node/register src/**/*.spec.ts",
     "lint": "tslint 'src/**/*.ts' 'examples/counter/**.ts --exclude 'examples/counter/node_modules",
     "cover": "NODE_ENV=test nyc npm run mocha"
   },
@@ -40,30 +40,30 @@
   },
   "homepage": "https://github.com/SethDavenport/select#readme",
   "devDependencies": {
-    "@angular/core": "2.0.0-rc.5",
-    "@types/chai": "^3.4.31",
-    "@types/es6-shim": "0.0.30",
-    "@types/mocha": "^2.2.30",
+    "@angular/core": "2.0.0-rc.6",
+    "@types/chai": "^3.4.32",
+    "@types/core-js": "^0.9.32",
+    "@types/jasmine": "^2.2.33",
+    "@types/mocha": "^2.2.31",
     "@types/node": "^6.0.36",
-    "@types/sinon": "^1.16.28",
+    "@types/sinon": "^1.16.29",
     "awesome-typescript-loader": "^2.2.1",
     "chai": "^3.5.0",
     "immutable": "^3.8.1",
-    "mocha": "^2.4.5",
+    "mocha": "^2.5.3",
     "nyc": "^8.1.0",
     "redux": "^3.4.0",
     "reflect-metadata": "0.1.3",
     "rimraf": "^2.5.2",
-    "rxjs": "5.0.0-beta.6",
-    "sinon": "^1.16.1",
+    "rxjs": "5.0.0-beta.11",
+    "sinon": "^1.17.5",
     "ts-node": "^1.3.0",
     "tslint": "^3.11.0",
     "typescript": "^2.0.0",
     "zone.js": "^0.6.15"
   },
   "peerDependencies": {
-    "@angular/core": "2.0.0-rc.3 || ^2.0.0-rc.4 || ^2.0.0-rc.5",
-    "rxjs": "5.0.0-beta.6"
+    "@angular/core": "2.0.0-rc.3 || ^2.0.0-rc.4 || ^2.0.0-rc.5 || ^2.0.0-rc.6"
   },
   "nyc": {
     "exclude": [

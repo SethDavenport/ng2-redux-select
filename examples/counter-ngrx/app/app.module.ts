@@ -3,13 +3,15 @@ import { CommonModule } from '@angular/common';
 import { BrowserModule } from '@angular/platform-browser';
 import { Store, StoreModule } from '@ngrx/store';
 import { CounterActions } from '../actions/counter.actions';
-import { App } from './app.component.ts';
+import { App } from './app.component';
 import { Counter } from '../components/counter.component';
 import { IAppState, rootReducer, INITIAL_STATE } from '../store/index';
 import { NgSelect } from '../../../src';
 
+// TODO: figure out why these are needed.
 import 'rxjs/add/operator/distinctUntilChanged';
 import 'rxjs/add/operator/map';
+// END TODO.
 
 @NgModule({
   imports: [
@@ -26,6 +28,6 @@ import 'rxjs/add/operator/map';
 })
 export class AppModule {
   constructor(store: Store<IAppState>, ngSelect: NgSelect) {
-    ngSelect.initialize(store);
+    ngSelect.connect(store);
   }
 }

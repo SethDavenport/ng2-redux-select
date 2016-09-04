@@ -29,7 +29,7 @@ import { IAppState, rootReducer, INITIAL_STATE } from '../store/index';
 export class AppModule {
   constructor(ngRedux: NgRedux<IAppState>, ngSelect: NgSelect) {
     ngRedux.configureStore(rootReducer, INITIAL_STATE);
-    ngSelect.initialize(ngRedux);
+    ngSelect.connect(ngRedux);
   }
 }
 ```
@@ -41,12 +41,6 @@ import { NgModule } from '@angular/core';
 import { Store, StoreModule } from '@ngrx/store';
 import { NgSelect } from '../../../src';
 import { IAppState, rootReducer, INITIAL_STATE } from '../store/index';
-
-// TODO: not sure why this is needed here - it's done inside NgSelect as well.
-// The ngrx example has issues without it - need to research why.
-import 'rxjs/add/operator/distinctUntilChanged';
-import 'rxjs/add/operator/map';
-// END TODO.
 
 @NgModule({
   imports: [
@@ -61,7 +55,7 @@ import 'rxjs/add/operator/map';
 })
 export class AppModule {
   constructor(store: Store<IAppState>, ngSelect: NgSelect) {
-    ngSelect.initialize(store);
+    ngSelect.connect(store);
   }
 }
 ```
