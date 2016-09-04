@@ -43,7 +43,6 @@
     "@angular/core": "2.0.0-rc.6",
     "@types/chai": "^3.4.32",
     "@types/core-js": "^0.9.32",
-    "@types/jasmine": "^2.2.33",
     "@types/mocha": "^2.2.31",
     "@types/node": "^6.0.36",
     "@types/sinon": "^1.16.29",
