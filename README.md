@@ -1,3 +1,6 @@
+[![npm version](https://img.shields.io/npm/v/ng2-redux-select.svg)](https://www.npmjs.com/package/ng2-redux-select)
+[![npm downloads](https://img.shields.io/npm/dt/ng2-redux-select.svg)](https://www.npmjs.com/package/ng2-redux-select)
+
 # Select
 
 Standalone-version of the
