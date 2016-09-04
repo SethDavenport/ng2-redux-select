@@ -10,7 +10,7 @@ export interface ISelectable {
 export class NgSelect {
   public static state$: Observable<any>;
 
-  initialize(store: ISelectable) {
+  connect(store: ISelectable) {
     NgSelect.state$ = store.select(s => s);
   }
 }

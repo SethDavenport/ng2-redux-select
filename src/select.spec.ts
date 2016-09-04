@@ -16,7 +16,7 @@ describe('@select', () => {
       select: () => mockState$
     };
 
-    ngSelect.initialize(mockSelectable);
+    ngSelect.connect(mockSelectable);
   });
 
   describe('when passed no arguments', () => {
