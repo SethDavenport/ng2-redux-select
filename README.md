@@ -9,7 +9,7 @@ Standalone-version of the
 Experiment to see if I can make it work with
 [ngrx](https://github.com/ngrx/store) too.
 
-Credit to Cosmin Ronnin for the original decorator implementation.
+Credit to [Cosmin Ronnin](https://github.com/kosz) for the original decorator implementation.
 
 # Setup
 
